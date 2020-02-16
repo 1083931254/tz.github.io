@@ -9,9 +9,6 @@ menu:
 #  Links: links  # 友链
 #  About: about  # 关于
 
-
-since: 2017
-
 # Enable/Disable menu icons
 menu_icons:
   enable: true  # 是否启用导航菜单图标
@@ -24,8 +21,6 @@ menu_icons:
   links: icon-friendship
   about: icon-cup-fill
 
-
-
 # rss
 rss: /atom.xml
 
@@ -36,7 +31,7 @@ site:
     width: 40
     height: 40
     url: ../images/logo.png
-  title: 小和尚看盘 # 页面title
+  title: 小和尚空间 # 页面title
   favicon: /favicon.png
   board: <p>风险第一、趋势为王!</p> # 站点公告
   copyright: false # 底部版权信息
@@ -58,7 +53,7 @@ pagination:
   next:
     alwayShow: true
 
-# Sidebar 右侧边栏
+# Sidebar
 sidebar: right
 widgets:
   - board  
@@ -86,8 +81,6 @@ search:
   insight: true # you need to install `hexo-generator-json-content` before using Insight Search
   baidu: false # you need to disable other search engines to use Baidu search
 
-
-
 # 搜索内容 隐藏分类和标签的搜索
 jsonContent:
   dateFormat: DD/MM/YYYY
@@ -108,9 +101,17 @@ jsonContent:
     tags: false
     author: false
 
-
-
-
+# Donate
+donate:
+  enable: false
+  # 微信打赏
+  wechatpay:
+    qrcode: images/donate/wechatpayimg.png
+    title: 微信支付
+  # 支付宝打赏
+  alipay: 
+    qrcode: images/donate/alipayimg.png 
+    title: 支付宝
 
 # Share
 # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
@@ -120,8 +121,8 @@ share:
   mobile_sites: weibo,qq,qzone  # 移动端显示的分享图标
 
 # Github
-#github: 
-#  username: cofess  # github username
+github: 
+  username: cofess  # github username
 
 # Comment
 # Gitment
@@ -130,7 +131,7 @@ comment:
   type: valine  # 启用哪种评论系统
   disqus:  # enter disqus shortname here
   youyan: 
-    uid: 1783844 # enter youyan uid 
+    uid: 0 # enter youyan uid 
   livere:
     uid: # enter youyan uid 
   gitment:
@@ -156,7 +157,17 @@ comment:
     pageSize: 10 # pagination size
     visitor: false # Article reading statistic https://valine.js.org/visitor.html
 
-
+# douban 豆瓣书单
+# Api：
+  # https://developers.douban.com/wiki/?title=book_v2 图书
+  # https://developers.douban.com/wiki/?title=movie_v2 电影
+# books：  
+  # https://api.douban.com/v2/book/user/:name/collections?start=0&count=100 个人书单列表
+# movies: 
+  # https://api.douban.com/v2/movie/in_theaters 正在上映的电影
+  # https://api.douban.com/v2/movie/coming_soon 即将上映的电影
+  # https://api.douban.com/v2/movie/subject/:id 单个电影信息
+  # https://api.douban.com/v2/movie/search?q={text} 电影搜索
 douban:
   user: # 豆瓣用户名
   start: 0 # 从哪一条记录开始
@@ -196,8 +207,8 @@ profile:
   avatar: images/avatar.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: 一禅
-  author_title: 小和尚看盘
-  author_description: 小和尚表达自己的看法。
+  author_title: 小和尚
+  author_description: 小和尚学习投资。
   location: Shanghai, China
   #follow: https://github.com/cofess
   # Social Links
@@ -243,32 +254,3 @@ profile:
   #projects:
   # cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
   # cofess/hexo-theme-pure: https://github.com/cofess/hexo-theme-pure
-    
-    
-   
-
-
-# Donate
-donate:
-  enable: false
-  # 微信打赏
-  wechatpay:
-    qrcode: images/donate/wechatpayimg.png
-    title: 微信支付
-  # 支付宝打赏
-  alipay: 
-    qrcode: images/donate/alipayimg.png 
-    title: 支付宝   
-
-
-# douban 豆瓣书单
-# Api：
-  # https://developers.douban.com/wiki/?title=book_v2 图书
-  # https://developers.douban.com/wiki/?title=movie_v2 电影
-# books：  
-  # https://api.douban.com/v2/book/user/:name/collections?start=0&count=100 个人书单列表
-# movies: 
-  # https://api.douban.com/v2/movie/in_theaters 正在上映的电影
-  # https://api.douban.com/v2/movie/coming_soon 即将上映的电影
-  # https://api.douban.com/v2/movie/subject/:id 单个电影信息
-  # https://api.douban.com/v2/movie/search?q={text} 电影搜索
